@@ -1,3 +1,4 @@
+
 print "Entre com o primeiro numero: "
 num01 = gets.chomp.to_i
 print "Entre com o segundo numero: "

@@ -1,3 +1,5 @@
+# 3 Faça um Programa que peça dois números e imprima a soma.
+
 print "Digite o primeiro numero: "
 num01 = gets.chomp.to_i
 print "Digite o segundo numero: "

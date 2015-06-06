@@ -2,7 +2,7 @@
 # Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
 
 print "Digite o sexo (F ou M): "
-getSexo = gets.chomp.capitalize
+getSexo = gets.chomp[0].capitalize
 
 sexo = case (getSexo)
 			when "F" then "Feminino"

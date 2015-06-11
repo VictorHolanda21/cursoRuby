@@ -22,7 +22,6 @@ class Pessoa
 
 	def engordar(valor)
 		@peso += valor
-		
 	end
 
 	def emagrecer(valor)

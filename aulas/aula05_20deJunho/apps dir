@@ -1,0 +1,3 @@
+rails new blog
+rails g scaffold post title body
+arquivo Gemfile add => gem 'therubyracer'

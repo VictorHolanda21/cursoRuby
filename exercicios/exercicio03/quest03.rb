@@ -27,22 +27,23 @@ class Retangulo
 
 	def calcula_area
 		@area = @base*altura
-		@area
 	end
 
 	def calcula_perimetro
 		@perimetro = @base + @altura
-		@perimetro
 	end
 end
 
-puts "Crie um retangulo: "
-print "Digite a base do retangulo: "
-base = gets.chomp.to_i
-print "Digite a altura do retangulo: "
-altura = gets.chomp.to_i
+# puts "Crie um retangulo: "
+# print "Digite a base do retangulo: "
+# # base = gets.chomp.to_i
 
-retangulo = Retangulo.new(base, altura)
+# print "Digite a altura do retangulo: "
+# # altura = gets.chomp.to_i
+
+# retangulo = Retangulo.new(base, altura)
+retangulo = Retangulo.new(40, 50)
+
 
 puts "Area do local: #{retangulo.calcula_area}"
 

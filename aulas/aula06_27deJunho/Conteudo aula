@@ -25,6 +25,8 @@ Criar aplicaçao que armazene dados de usuarios (nome, email, site)
 => $ rails generate model Usuario username email site
 ($ rails d model Usuario username email site # deleta, d = destroy)
 
+(rake db:create nao se usa no sqlite)
+
 => $ rake db:migrate
 ($ rake -T # mostra todas as tarefas, tasks, do rake)
 ($ rake db:rollback # ele volta o BD uma etapa anterior)
@@ -74,18 +76,23 @@ inserir em Usuario
 
 => em Gemfile insere gem 'pry-rails' # deixa o console mais elegante, rodar o Bundle apos editar o Gemfile
 => 
-=> 
-=> 
-=> 
-=> 
 
 
 #################################
 Atividade pdf no telegram
+
 Criar nova App chamada Academico
 Criar modelo Aluno
 		nome_completo string
 		email string
+		endereco string
 		data_nascimento date
 		telefone string
 
+
+#################################
+
+=> rake test # testa as coisas mais basicas (BD criado, migrado, etc.)
+=> arquivo test/model/aluno_test.rb 
+=> arquivo app/models/aluno.rb adiciona> validates_presence_of :nome_completo
+=> 

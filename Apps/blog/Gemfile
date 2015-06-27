@@ -45,3 +45,4 @@ end
 
 # Add Aula 05 - 20 de Junho
 gem 'therubyracer'
+gem 'pry-rails'

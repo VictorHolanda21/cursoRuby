@@ -1,0 +1,91 @@
+=> Resumo aula passada
+
+#################################
+
+=> Banco de Dados
+=> Modelos
+=> Migrations
+=> Testes
+=> 
+=> 
+
+#################################
+
+Google => rails guides # documentacao rails
+
+Criar aplicaçao que armazene dados de usuarios (nome, email, site)
+# Apps/blog
+
+#################################
+
+=> Inserir linha no .gitignore ## ele ignora o que tem na hora de enviar para o repositorio
+
+=> cria uma copia do arquivo /config/database.yml para database.yml.template 
+
+=> $ rails generate model Usuario username email site
+($ rails d model Usuario username email site # deleta, d = destroy)
+
+=> $ rake db:migrate
+($ rake -T # mostra todas as tarefas, tasks, do rake)
+($ rake db:rollback # ele volta o BD uma etapa anterior)
+($ rake db:migrate VERSION=20150620182709 #timestamp)
+
+=> rails console # eh o console do rails, tipo irb
+
+irb> Rails.env # mostra o ambiente
+irb> Rails.root # mostra o endereço, a raiz, da app
+irb> Post.all # ver todos os registros da tabela Posts inserido no BD
+irb> Post.count # conta quantos registro tem na tabela
+irb> Post.new # [ENTER] mostra todos os campos disponiveis
+(irb> Post.delete(i) # deleta um registro, i = id, index)
+irb> post = Post.new # instaciando objeto da clase Post
+irb> post.title = "Meu Primeiro Post"
+irb> post.body = "Lorem ipsum lorem"
+irb> post.save # salva o objeto post no BD
+
+(irb> exit ou CTRL + D # sair do console)
+
+irb> post1 = Post.new(:title => "Segundo Post", :body => "Lorem ipsum lorem ipsum")
+irb> post1.save
+
+irb> Post.create :title => "Terceiro Post", :body => "Lorem ipsum lorem" # salva direto no BD sem precisar instanciar
+
+
+irb> Post.find(1) # procura pelo post com id = 1
+irb> Post.where(:title =>"titulo") # Procura por todos os registros usando outros campos
+(irb>Post.where(:title =>"titulo").first)
+(irb>Post.find_by_title_and_body("titulo", "body") )
+(irb>Post.first #Primeiro registo inserido)
+irb> 
+irb> 
+irb> 
+
+#################################
+inserir em Usuario
+	username: john doe
+	email: johndoe@domain.com
+	site: johndoe.com
+
+	username: Renato
+	email: renatosousafilho@gmail.com
+	site: renatofilho.me
+
+#################################
+
+=> em Gemfile insere gem 'pry-rails' # deixa o console mais elegante, rodar o Bundle apos editar o Gemfile
+=> 
+=> 
+=> 
+=> 
+=> 
+
+
+#################################
+Atividade pdf no telegram
+Criar nova App chamada Academico
+Criar modelo Aluno
+		nome_completo string
+		email string
+		data_nascimento date
+		telefone string
+

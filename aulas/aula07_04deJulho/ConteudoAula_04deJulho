@@ -1,0 +1,45 @@
+
+=> $ rails g model Author name bio:text # Criar em blog mais um modelo
+=> $ rake db:migrate
+=> $ rails c
+=> Criar modelo comment.rb manualmente
+=> $ rails g migration CreateComments body:text name email 
+=> $ rails c  
+irb> Post.where("title like '%Ruby%'") #pesquisar
+
+#################################
+	Criar associaçoes:
+		1* A nivel de BD
+
+
+#################################
+
+=> $ rails g migration AddAuthorIdToPosts author_id:integer # Adiciona Coluna id de Author em Post
+=> rails c 
+irb> Author.create(name: "John Doe", bio: "Jornalista da BBC")
+irb> post = Post.first
+irb> post.update(:author_id=>1)
+irb> author = Author.find(post.author_id)
+
+=> editar arquivo post.rb em models
+=> editar arquivo index.html.erb em view tbody
+      <td><%= post.author.name %></td>
+=> editar arquivo author.em models
+
+irb> reload!
+irb> posts = Post.where(author_id: author.id)
+irb> author.posts
+irb> author.posts.create()
+irb>
+
+=> rails d model Comment
+=> rails g model Comment body:text post:references
+=>
+=>
+=>
+=>
+=>
+
+
+irb>
+=> 

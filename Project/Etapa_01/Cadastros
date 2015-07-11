@@ -1,0 +1,50 @@
+Tabelas
+	Cursos (Administradores)
+		Nome
+		Objetivo
+		Carga Horaria
+		Investimento
+		Local
+		Data Inicio
+		Data Final
+		Professor_id
+
+	Palestras (Administradores)
+		Tema
+		Palestrante(s)
+		Horario
+		Local
+		Investimento
+		Palestrante_id
+		(Agenda)
+
+	Professores (Administradores)
+		Nome
+		Telefone
+		Email
+		Especialidade
+		Remuneracao
+		Turma_id
+
+	Palestrantes (Administradores)
+		Nome
+		Telefone
+		Email
+		Especialidade
+		Remuneracao
+		Palestra_id
+
+###################################
+
+	Alunos
+		Nome
+		Telefone
+		Email
+		Endereco
+		CPF
+		RG
+		Mae
+		Pai
+		Cidade
+		UF
+		Pais

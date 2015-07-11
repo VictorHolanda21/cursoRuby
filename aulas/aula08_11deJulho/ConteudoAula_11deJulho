@@ -1,0 +1,8 @@
+=> em blog>model>post.rb
+
+	delegate :name, to: :author, :prefix => "author"
+	#delega o metodo name de author com prefixo author para o novo metodo, prefixo e somente para melhor identificaçao
+
+	delegate :name, to: :tag, :prefix => "tag"
+	#delega o metodo name de tag com prefixo tag
+

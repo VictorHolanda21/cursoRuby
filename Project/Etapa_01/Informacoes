@@ -1,0 +1,27 @@
+Site Vendas Cursos e Palestras
+	
+	Cursos
+		Administrativos
+			Gestao de Projeto
+			...
+
+		Informatica
+			Logica de Programacao
+			...
+
+		Idiomas
+			Ingles
+			...
+
+	Palestras
+		Especifica (Palestrantes Contratados)
+		Professores (Tema a escolha do mesmo)
+
+	Professores
+
+Cases :
+	
+	- Senac
+	- SoftBlue
+	- EventTick
+		http://www.eventick.com.br

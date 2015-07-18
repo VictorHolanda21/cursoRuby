@@ -1,0 +1,16 @@
+####################################
+=> 
+irb >
+$ rails g controller home # blog
+=> colocar em home_controller.rb
+	def index
+	end
+
+=> definir em routes.rb uma rota pro home
+	resources :home, :only => [:index]
+	# conferir com rake routes
+
+=> criar view index.html.erb
+	
+=> criar manualmente um controller authors_controller.rb
+=> criar manualmente view e authors/

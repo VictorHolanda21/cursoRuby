@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts
-
-  resources :home, :only => [:index]
-  resources :authors
+  resources :students
+  resources :courses
+  resources :turmas
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,5 +1,7 @@
 <h1>Lista de autores</h1>
 
+<p><%= flash[:notice] %></p>
+
 <%= @authors.size %> Autores cadastrados. <br>
 
 <table>
@@ -14,7 +16,10 @@
 			<td><%= author.name %></td>
 			<td><%= author.bio %></td>
 			<td><%= author.created_at %></td>
+			
 		</tr>
 	<% end %>
 
 </table>
+
+<%= link_to "Novo Autor", new_author_path %>

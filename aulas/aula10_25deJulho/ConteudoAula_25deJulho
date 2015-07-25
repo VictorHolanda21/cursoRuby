@@ -1,0 +1,12 @@
+=> em authors_controller.rb
+	def new
+	end
+
+###############################
+form_for
+	number_field
+	radio
+	select
+###############################
+
+debugar= binding.pry => gem 'pry-rails', group: :development

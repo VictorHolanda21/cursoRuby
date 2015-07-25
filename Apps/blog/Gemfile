@@ -45,5 +45,8 @@ end
 
 # Add Aula 05 - 20 de Junho
 gem 'therubyracer'
-gem 'pry-rails'
+gem 'pry-rails', group: :development
 gem "bootstrap-sass"
+
+# Add aula 10 - 25 de Julho
+

@@ -6,16 +6,24 @@
 
 <table>
 	<tr>
+		<th>Id</th>
 		<th>Nome</th>
 		<th>Biografia</th>
 		<th>Registrado em</th>
+		<th>Opçoes</th>
 	</tr>
 
 	<% @authors.each do |author| %>
 		<tr>
+			<td><%= author.id %></td>
 			<td><%= author.name %></td>
 			<td><%= author.bio %></td>
 			<td><%= author.created_at %></td>
+			<td>
+				<%= link_to "Editar", edit_author_path(author) %>
+				<%= link_to "Mostrar", author_path(author) %>
+				<%= link_to "Excluir", author_path(author), method: :delete, data: {confirm: "Deseja realmente excluir?"} %>
+			</td>
 			
 		</tr>
 	<% end %>

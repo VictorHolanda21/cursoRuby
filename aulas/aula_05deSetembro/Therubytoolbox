@@ -1,0 +1,15 @@
+Therubytoolbox
+	-- paperclipe
+	-- authorization
+
+
+rails new loja
+rails g scaffold Product name price:decimal description:text
+gem 'paperclip'
+rails g migration AddPhotoToProduct
+gem 'carrierwave'
+
+https://www.ruby-toolbox.com/categories/rails_file_uploads#carrierwave
+https://rubygems.org/gems/carrierwave
+
+coudinary cloud image

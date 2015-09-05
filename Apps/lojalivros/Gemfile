@@ -43,10 +43,3 @@ group :development, :test do
   gem 'spring'
 end
 
-# Add Aula 05 - 20 de Junho
-gem 'therubyracer'
-gem 'pry-rails', group: :development
-gem "bootstrap-sass"
-gem 'devise'
-# Add aula 10 - 25 de Julho
-
